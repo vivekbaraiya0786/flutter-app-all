@@ -1,0 +1,114 @@
+{
+  "ProductsData": [
+    {
+      "Id": "1",
+      "Category": "Electronics",
+      "Name": "Mobile",
+      "Image": "https://m.media-amazon.com/images/I/61VfL-aiToL._SL1500_.jpg",
+      "Price": "24000",
+      "Ratings": "4.2"
+    },
+    {
+      "Id": "2",
+      "Category": "Qwerty",
+      "Name": "Asd",
+      "Image": "https://contents.mediadecathlon.com/p1484240/ab565f3675dbdd7e3c486175e2c16583/p1484240.jpg",
+      "Price": "800.30",
+      "Ratings": "3.9"
+    },
+    {
+      "Id": "3",
+      "Category": "Wearables",
+      "Name": "Shoes",
+      "Image": "https://ae01.alicdn.com/kf/Se2456185720641a19b4fedaf9935af702/2022-Summer-Brand-Driving-Loaferstrendy-Men-Casual-Shoes-Big-Size-38-47-Breathable-Wholesale-Man-Soft.jpg",
+      "Price": "4000",
+      "Ratings": "4.8"
+    },
+    {
+      "Id": "4",
+      "Category": "Devices",
+      "Name": "Monitor",
+      "Price": "2000",
+      "Ratings": "4.1"
+    },
+    {
+      "Id": "5",
+      "Category": "Healthcare devices",
+      "Name": "Blood Pressure Monitor",
+      "Image": "https://m.media-amazon.com/images/I/61Sn5MnzXdL._SL1500_.jpg",
+      "Price": "2200"
+    },
+    {
+      "Id": "6",
+      "Category": "Abc",
+      "Image": "https://m.media-amazon.com/images/I/61VfL-aiToL._SL1500_.jpg",
+      "Price": "300.90",
+      "Ratings": "2"
+    },
+    {
+      "Id": "7",
+      "Category": "Clothes",
+      "Name": "Shirt",
+      "Image": "https://contents.mediadecathlon.com/p1484240/ab565f3675dbdd7e3c486175e2c16583/p1484240.jpg",
+      "Ratings": "3.8"
+    },
+    {
+      "Id": "8",
+      "Category": "Wearables",
+      "Name": "Socks",
+      "Image": "https://ae01.alicdn.com/kf/Se2456185720641a19b4fedaf9935af702/2022-Summer-Brand-Driving-Loaferstrendy-Men-Casual-Shoes-Big-Size-38-47-Breathable-Wholesale-Man-Soft.jpg",
+      "Ratings": "4.6"
+    },
+    {
+      "Id": "9",
+      "Category": "Rtyu",
+      "Image": "https://m.media-amazon.com/images/I/81+M1QrVNIL._SL1500_.jpg",
+      "Price": "200",
+      "Ratings": "3.1"
+    },
+    {
+      "Id": "10",
+      "Category": "Home & Kitchen",
+      "Name": "Mixer",
+      "Image": "https://m.media-amazon.com/images/I/81+M1QrVNIL._SL1500_.jpg",
+      "Price": "2600",
+      "Ratings": "4"
+    },
+    {
+      "Id": "11",
+      "Category": "Ctronics",
+      "Name": "AMobile",
+      "Image": "https://m.media-amazon.com/images/I/61VfL-aiToL._SL1500_.jpg",
+      "Price": "4000"
+    },
+    {
+      "Id": "12",
+      "Name": "FhjAsd",
+      "Image": "https://contents.mediadecathlon.com/p1484240/ab565f3675dbdd7e3c486175e2c16583/p1484240.jpg",
+      "Price": "400",
+      "Ratings": "3.3"
+    },
+    {
+      "Id": "13",
+      "Category": "Ables",
+      "Name": "Choes",
+      "Price": "700",
+      "Ratings": "3.6"
+    },
+    {
+      "Id": "14",
+      "Name": "Mouce",
+      "Image": "https://m.media-amazon.com/images/I/61Sn5MnzXdL._SL1500_.jpg",
+      "Price": "5000",
+      "Ratings": "1.2"
+    },
+    {
+      "Id": "15",
+      "Category": "Care devices",
+      "Name": "Pressure Monitor",
+      "Image": "https://m.media-amazon.com/images/I/61Sn5MnzXdL._SL1500_.jpg",
+      "Price": "900",
+      "Ratings": "2,6"
+    }
+  ]
+}
