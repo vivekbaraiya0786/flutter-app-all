@@ -164,7 +164,7 @@ class _homepageState extends State<homepage> {
 }
 
 // import 'package:flutter/material.dart';
-// import 'package:projects/Controller/Provider/counter_provider.dart';
+// import 'package:projects/Controller/Provider/counter_controller.dart';
 // import 'package:provider/provider.dart';
 //
 // import '../../Controller/Provider/themeProvider.dart';

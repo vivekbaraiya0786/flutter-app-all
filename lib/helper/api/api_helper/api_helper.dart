@@ -1,11 +1,13 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:projects/Modals/api/weather_app/weather_modal.dart';
 
 import '../../../Modals/api/fitness-app/fitness_modal.dart';
 import '../../../Modals/api/logo-app/logo_nodal.dart';
 import '../../../Modals/api/news_app/news_modal.dart';
 import '../../../Modals/api/qoutes_app_api/qoute_modal.dart';
+import '../../../Modals/api/todo-app/todo_modal.dart';
 
 class Api_Helper {
   Api_Helper._();
@@ -81,6 +83,35 @@ class Api_Helper {
       Map decodeData = jsonDecode(data);
       NewsModal? news = NewsModal.fromJson(json: decodeData);
       return news;
+    }
+  }
+
+  Future<WeatherModal?> fetchweather(String country, String days) async {
+    String url =
+        "http://api.weatherapi.com/v1/forecast.json?key=0e13ee46ce054e1c96373357232410&q=$country&days=$days&aqi=yes&alerts=yes";
+    http.Response res = await http.get(Uri.parse(url));
+
+    if (res.statusCode == 200) {
+      String data = res.body;
+      // print(data);
+      Map decodeData = jsonDecode(data);
+      WeatherModal weatherModal = WeatherModal.fromJson(json: decodeData);
+      return weatherModal;
+    }
+    return null;
+  }
+
+  Future<TodoModal?> fetchTodo() async {
+    final Url = "https://api.nstack.in/v1/todos?page=1&limit=10";
+
+    http.Response res = await http.get(Uri.parse(Url));
+
+    if (res.statusCode == 200) {
+      String body = res.body;
+      // print(body);
+      Map decodeData = jsonDecode(res.body);
+      TodoModal todoModal = TodoModal.fromJson(json: decodeData);
+      return todoModal;
     }
   }
 }

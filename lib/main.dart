@@ -10,7 +10,7 @@
 // import 'package:shared_preferences/shared_preferences.dart';
 //
 // import 'Controller/Provider/contact_diary/contact_provider.dart';
-// import 'Controller/Provider/contact_diary/counter_provider.dart';
+// import 'Controller/Provider/contact_diary/counter_controller.dart';
 // import 'Controller/Provider/contact_diary/image_picker_provider.dart';
 // import 'Controller/Provider/contact_diary/stepper_provider.dart';
 // import 'Controller/Provider/contact_diary/themeProvider.dart';
@@ -402,30 +402,109 @@
 
 // product-app
 
-import 'package:flutter/material.dart';
-import 'package:projects/views/screens/json/product_app.dart';
-import 'package:provider/provider.dart';
+// import 'package:flutter/material.dart';
+// import 'package:projects/views/screens/api/weather_app/homepage.dart';
+// import 'package:provider/provider.dart';
+//
+// import 'Controller/Provider/api/weather_app/weather_provider.dart';
+//
+// void main() {
+//   runApp(MultiProvider(
+//     providers: [
+//       ChangeNotifierProvider(
+//         create: (context) => weather_Provider(),
+//       ),
+//     ],
+//     builder: (context, child) {
+//       return MaterialApp(
+//         debugShowCheckedModeBanner: false,
+//         theme: ThemeData.light(useMaterial3: true),
+//         darkTheme: ThemeData.dark(useMaterial3: true),
+//         themeMode: ThemeMode.system,
+//         // initialRoute: ,
+//         routes: {
+//           '/': (context) => weather_app_homepage(),
+//         },
+//       );
+//     },
+//   ));
+// }
 
-import 'Controller/Provider/api/news_app/news_provider.dart';
+//todo app
+
+// import 'package:flutter/material.dart';
+// import 'package:projects/views/screens/api/todo_app/todo_list.dart';
+//
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData.light(useMaterial3: true),
+//       darkTheme: ThemeData.dark(useMaterial3: true),
+//       themeMode: ThemeMode.system,
+//       routes: {
+//         '/': (context) => todo_homepage(),
+//       },
+//     ),
+//   );
+// }
+
+//platfrom
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+// import 'package:projects/Controller/Provider/platform_convert/app_provider.dart';
+// import 'package:projects/views/screens/platform_convert/cupertinohomepage.dart';
+// import 'package:projects/views/screens/platform_convert/homepage.dart';
+// import 'package:provider/provider.dart';
+//
+// void main() {
+//   runApp(MultiProvider(
+//     providers: [
+//       ChangeNotifierProvider(
+//         create: (context) => App_Provider(),
+//       ),
+//     ],
+//     builder: (context, child) {
+//       return (Provider.of<App_Provider>(context).app_modal.changeApp == true)
+//           ? CupertinoApp(
+//               debugShowCheckedModeBanner: false,
+//               routes: {
+//                 '/': (p0) => const cupertino_homepage(),
+//               },
+//             )
+//           : MaterialApp(
+//               debugShowCheckedModeBanner: false,
+//               routes: {
+//                 '/': (context) => const platFrom_HomePage_material(),
+//               },
+//             );
+//     },
+//   ));
+// }
+
+//get - ecommerce app
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:projects/views/screens/e-commerce_get/cart_page.dart';
+import 'package:projects/views/screens/e-commerce_get/e-commrce%20homepage.dart';
 
 void main() {
-  runApp(MultiProvider(
-    providers: [
-      ChangeNotifierProvider(
-        create: (context) => news_Provider(),
-      ),
-    ],
-    builder: (context, child) {
-      return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData.light(useMaterial3: true),
-        darkTheme: ThemeData.dark(useMaterial3: true),
-        themeMode: ThemeMode.system,
-        // initialRoute: ,
-        routes: {
-          '/': (context) => product_homepage(),
-        },
-      );
-    },
-  ));
+  runApp(
+    GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(useMaterial3: true),
+      darkTheme: ThemeData.dark(useMaterial3: true),
+      themeMode: ThemeMode.system,
+      getPages: [
+        GetPage(
+          name: '/',
+          page: () => e_commerce_home_page(),
+        ),
+        GetPage(
+          name: '/cart_page',
+          page: () => cart_page(),
+        )
+      ],
+    ),
+  );
 }

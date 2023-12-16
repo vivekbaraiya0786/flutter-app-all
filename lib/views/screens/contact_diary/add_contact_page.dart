@@ -613,7 +613,7 @@ class _add_contactState extends State<add_contact> {
 // import 'package:flutter/material.dart';
 // import 'package:provider/provider.dart';
 //
-// import '../../Controller/Provider/counter_provider.dart';
+// import '../../Controller/Provider/counter_controller.dart';
 // import '../../Controller/Provider/themeProvider.dart';
 //
 // class Add_Conatct extends StatefulWidget {

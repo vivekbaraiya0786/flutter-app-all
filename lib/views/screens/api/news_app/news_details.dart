@@ -15,7 +15,9 @@ class _NewsDetailsState extends State<NewsDetails> {
   Widget build(BuildContext context) {
     Article? article = ModalRoute.of(context)!.settings.arguments as Article?;
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Details Page"),
+      ),
       body: ListView(
         children: [
           Card(
